@@ -1,0 +1,22 @@
+extends ../config/template
+append config
+    - NombPagina = "Inicio"
+prepend styles
+block contenido
+
+    // B A N N E R
+    .banner
+        .banner__container.container
+           .banner__header
+               .banner__header--main
+                   h2 Lorem ipsum es un texto
+               form.banner__header--form
+                   input(type='text' name='nombre' placeholder='Nombre y Apellido')
+                   input(type='email' name='correo' placeholder='Correo')
+                   input(type='text' name='celular' placeholder='Celular')
+                   select
+                    option 1
+                    option 2
+                   a(href="#") Contáctanos
+
+prepend script-final
